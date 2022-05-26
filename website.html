@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: rgb(246, 255, 255);
+  background-size: auto;
+}
+.header {
+  padding: 1px;
+  text-align: left;
+  background: #f1f5f4;
+  color: rgb(9, 180, 223);
+  height:auto;
+  size: 0cm;
+}
+ .navbar {
+  overflow: hidden;
+  background-color: rgb(17, 17, 17);
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  text-align:center;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: rgb(244, 235, 235);
+  text-align: left;
+  padding: 14px 20px;
+text-decoration: underline;
+}
+.navbar a.right {
+  float: right;
+  text-align: left;
+}
+.navbar a:hover {
+  background-color: rgb(28, 251, 243);
+  color: rgb(249, 247, 247);
+   text-align: left;
+}
+.navbar a.active {
+  background-color:  rgb(28, 251, 243);
+  color: rgb(212, 27, 27);
+  text-align: left;
+}
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+.side { 
+  flex: 30%;
+  background-color: #f8eff8;
+}
+.footer {
+  height:auto;
+  width:100vw;
+  font-family:"open Sans";
+  padding-top:40px;
+  background-color:#f1f2f3;
+  font-size : 1.8rem;
+}
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body background="blue">
+
+<div class="header">
+  <center>
+</div>
+
+<div class="navbar"> <b>
+   <div> <img src="data:image/jpeg;base64,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"></a></div>
+ <a href="file:///home/akhil/Documents/abhiraj/cricket/website.html">HOME</a>
+  <a href="file:///home/akhil/Documents/abhiraj/cricket/bats.html">bats</a>
+  <a href="file:///home/akhil/Documents/abhiraj/cricket/balls.html">balls</a>
+  <a href="file:///home/akhil/Documents/abhiraj/cricket/sponsor.html">Sponsorships</a>
+</b>
+</div>
+<div class="row">
+    <CENTRE>
+  <div class="side"></div>
+  <hr>
+  <a href="">
+    &nbsp,&nbsp,&nbsp,&nbsp&nbsp,&nbsp,&nbsp,&nbsp&nbsp,
+ <img src="https://cdn11.bigcommerce.com/s-3954e/images/stencil/420x420/products/12322/19993/SG_4__16832.1635519099.jpg?c=2"></a>
+ &nbsp,&nbsp,&nbsp,&nbsp&nbsp,&nbsp,&nbsp,&nbsp&nbsp,&nbsp,&nbsp,&nbsp
+ <img src="https://i.ytimg.com/vi/YadfxaiAVoc/hqdefault.jpg"></a>
+ &nbsp,&nbsp,&nbsp,&nbsp&nbsp,&nbsp,&nbsp,&nbsp&nbsp,&nbsp,&nbsp,&nbsp &nbsp,&nbsp,&nbsp,&nbsp&nbsp,&nbsp
+ <img src="https://cdn11.bigcommerce.com/s-3954e/images/stencil/420x420/products/12321/19996/WhatsApp_Image_2021-09-15_at_8.42.02_PM__12529.1635519387.jpg?c=2"></a>
+ <hr> 
+ <a href="">
+    <img src="https://crictv4u.com/wp-content/uploads/2021/09/cheteshwar-pujara-1-700x407.jpg"></a>
+    &nbsp,&nbsp,&nbsp,&nbsp&nbsp,&nbsp,&nbsp,&nbsp&nbsp,&nbsp,&nbsp,&nbsp
+    <img src="https://wemagazine.in/wp-content/uploads/2019/07/Cricket-players-and-their-bats-over-the-years-3.jpg"></a>
+ <hr>
+    </CENTRE>
+</div>
+<div class="footer">
+  <center>
+   <a href ="https://www.instagram.com/sgcricketofficial/"><i class="fa fa-instagram"></i></a>
+   <a href ="https://www.youtube.com/channel/UCTI7FWjdVl5aBKSyrqQ-xWQ"><i class="fa fa-youtube"></i></a>
+   <a href ="https://www.facebook.com/sgcricket/"><i class="fa fa-facebook"></i></a>
+   <p> <b> Copyright © 2021  Sanspareils Greenlands Pvt Ltd. All Rights Reserved.
+
+</p> </b>
+   </center>
+</div>
+</body>
+</html>
